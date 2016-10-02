@@ -21,7 +21,6 @@ function LSController($scope){
   function calculateItems(string) {
     var lunchList = string.split(',');
     var nonEmptyItems = 0;
-    alert(nonEmptyItems);
     for (var i = 0; i < lunchList.length; i++) {
       if (lunchList[i].trim()) {
         nonEmptyItems++;
