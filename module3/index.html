@@ -18,16 +18,16 @@
   <body ng-app='NarrowItDownApp'>
     <div ng-controller='NarrowItDownController as NarrowIt'>
       <h1>Narrow Down Your Chinese Menu Choice</h1>
-        <div class="narrow-button">
-          <input ng-model="NarrowIt.Keyword" type="text" placeholder="search term" class="form-control">
-        </div>
-        <div class="narrow-button">
-          <button ng-click="NarrowIt.find()" class="btn btn-primary">Narrow It Down For Me!</button>
-        </div>
-        <div class="lista">
+      <div class="narrow-button">
+        <input ng-model="NarrowIt.Keyword" type="text" placeholder="search term" class="form-control">
+      </div>
+      <div class="narrow-button">
+        <button ng-click="NarrowIt.find()" class="btn btn-primary">Narrow It Down For Me!</button>
+      </div>
+      <div class="lista">
         <found-items found-items="NarrowIt.found" on-remove="NarrowIt.removeItem(index)"></found-items>
       </div>
-        <div class="emptyMessage" ng-if="NarrowIt.check">Nothing found.</div>
+      <div class="emptyMessage" ng-if="NarrowIt.check">Nothing found.</div>
     </div>
   </body>
 </html>
